@@ -27,21 +27,20 @@ Within the flow add functionality to add the list of rules
 Those 2 rules are to make the execution graph acyclic.
 - If next id is empty ('If rule passed'/'If rule failed') then stop execution and display the list of executed tasks including status(passed/failed)
 
+Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea about the UI of the flow
+![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
+
 #Instructions
 - Use just  pure Javascript  for the implementation
 - Feel free to be creative and reasonable about the UI/UX
 - You can use any other libraries for UI/View
 
-Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea about the UI of the flow
-![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
-
 #What we're are going to check:
-Code quality
-UI/UX and responsiveness
-Testing
-Correctness
-Technical choices
-
+- Code quality
+- UI/UX and responsiveness
+- Testing
+- Correctness
+- Technical choices
 
 #Submission
 Please push your code to a GitHub repository(or similar) and let us when that it's ready to review. We appreciate your time and energy completing the coding exercise and will review your solution as quickly as possible.
