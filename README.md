@@ -32,8 +32,8 @@ Those 2 rules are to make the execution graph acyclic.
 - Feel free to be creative and reasonable about the UI/UX
 - You can use any other libraries for UI/View
 
-Please see the mockup below to get a better idea about the UI of the flow
-
+Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea about the UI of the flow
+![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
 
 #What we're are going to check:
 Code quality
