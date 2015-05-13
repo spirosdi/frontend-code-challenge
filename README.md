@@ -2,14 +2,14 @@ Hubrick Frontend Challenge
 ========================
 
 We're excited that you're interested in joining the [Hubrick](https://hubrick.com/) team. 
-The purpose of this test is to see how you approach problems and to see the quality of your code is.
+The purpose of this test, is to see how you approach problems and to see the quality of your code is.
 
 #Challenge description
 Create a simple flow engine.
 
-Flow engine is a application that allows to create a flow consisting of several rules, execute the flow against some incoming data (json struct). The result of the execution should be displayed.  
+Flow engine is an application that allows to create a flow consisting of several rules, executing the flow against some incoming data (json struct). The result of the execution should be displayed.  
 Create a new flow (with some name). 
-Within the flow add functionality to add the list of rules
+Within the flow, add functionality to add the list of rules
 	Each rule should contain:
 - id (unique, obligatory)
 	- title
@@ -19,11 +19,11 @@ Within the flow add functionality to add the list of rules
 	if “true_id” or “false_id” is null it means the end of the flow execution, a terminal.
 
 - Pass an object to the created flow and it will be processed. 
-- As a result show chain of  executed rules (their title, with colours like green for passed rule and red for failed).
+- As a result show the chain of executed rules (their title incl. colours like green for passed rule and red for failed).
 
 ##Rules:
 - You can not specify the same rule id in 'true_id' or 'false_id' more than once within the same flow
--  the very first rule’s  id can not be specified in 'If rule passed' or 'If rule failed'
+-  the very first rule’s id can not be specified in 'If rule passed' or 'If rule failed'
 Those 2 rules are to make the execution graph acyclic.
 - If next id is empty ('If rule passed'/'If rule failed') then stop execution and display the list of executed tasks including status(passed/failed)
 
@@ -31,11 +31,11 @@ Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-
 ![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
 
 #Instructions
-- Use just  pure Javascript  for the implementation
+- Just use pure Javascript for the implementation
 - Feel free to be creative and reasonable about the UI/UX
 - You can use any other libraries for UI/View
 
-#What we're are going to check:
+#What we're are looking for:
 - Code quality
 - UI/UX and responsiveness
 - Testing
