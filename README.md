@@ -11,7 +11,7 @@ Flow engine is an application that allows to create a flow consisting of several
 Create a new flow (with some name). 
 Within the flow, add functionality to add the list of rules
 	Each rule should contain:
-- id (unique, obligatory)
+- id (unique within the Flow, obligatory)
 	- title
 	- rule that will be run against some incoming json data. This is basically a function that takes a parameter (json data) and returns a boolean result.
 - next id of the rule to execute if the function returns true
@@ -31,9 +31,10 @@ Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-
 ![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
 
 #Instructions
-- Just use pure Javascript for the implementation
+- Just use pure Javascript for the Flow logic implementation (no underscore and other libraries)
+- It's up to you where and how to store the Flow object
+- You can use any libraries for UI/View/Template
 - Feel free to be creative and reasonable about the UI/UX
-- You can use any other libraries for UI/View
 
 #What we're are looking for:
 - Code quality
