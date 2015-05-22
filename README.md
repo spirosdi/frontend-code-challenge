@@ -36,7 +36,7 @@ Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-
 - You can use any libraries for UI/View/Template
 - Feel free to be creative and reasonable about the UI/UX
 
-#What we're are looking for:
+#What we're looking for:
 - Code quality
 - UI/UX and responsiveness
 - Testing
