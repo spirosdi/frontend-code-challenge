@@ -2,12 +2,12 @@ Hubrick Frontend Challenge
 ========================
 
 We're excited that you're interested in joining the [Hubrick](https://hubrick.com/) team. 
-The purpose of this test, is to see how you approach problems and to see the quality of your code is.
+The purpose of this test, is to see how you approach problems and evaluate the quality of your code.
 
 #Challenge description
 Create a simple flow engine.
 
-Flow engine is an application that allows to create a flow consisting of several rules, executing the flow against some incoming data (json struct). The result of the execution should be displayed.  
+Flow engine is an application that creates a flow consisting of several rules, executing the flow against some incoming data (json struct). The result of the execution should be displayed.  
 Create a new flow (with some name). 
 Within the flow, add functionality to add the list of rules
 	Each rule should contain:
