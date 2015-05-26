@@ -45,4 +45,3 @@ Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-
 
 #Submission
 Please push your code to a GitHub repository(or similar) and let us know when it's ready to for review. We appreciate your time and energy completing the coding exercise and will review your solution as quickly as possible.
-# frontend-code-challenge
