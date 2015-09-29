@@ -20,44 +20,11 @@ Pass an object (an example of an object and a rule is given below) to the create
 
 The execution will end when a `null` is provided for the `true_id` (and the function returns `true`) or when `null` is provided for the `false_id` (and the function returns `false`).
 
-##Constraints:
--  The flow engine should not be circular
+Additionally, the flow engine (with the provided rule-set) should not be circular.
 
 #Information
 Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea of the flow
 ![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
-
-| Example Object |
-------------------
-```javascript
-
-{
-	furry: true,
-	noise: "miaow",
-	lives: 9
-}
-
-```
-| Example Rule |
-------------------
-```javascript
-	var rule = {
-	id: 1,
-	body: function(data){
-		if (data.furry && lives === 9) {
-			// probably a cat
-			return true;
-		} else {
-			return false;
-		}
-		
-	}
-	true_id: 3,
-	false_id: 6,
-	name: 'is a cat rule'
-	}
-
-```
 
 
 #Instructions
