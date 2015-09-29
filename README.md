@@ -2,39 +2,69 @@ Hubrick Frontend Challenge
 ========================
 
 We're excited that you're interested in joining the [Hubrick](https://hubrick.com/) team. 
-The purpose of this test, is to see how you approach problems and evaluate the quality of your code.
+The purpose of this test is to see how you approach problems as well as to evaluate the quality of your code.
 
 #Challenge description
 Create a simple flow engine.
 
-Flow engine is an application that creates a flow consisting of several rules, executing the flow against some incoming data (json struct). The result of the execution should be displayed.  
-Create a new flow (with some name). 
-Within the flow, add functionality to add the list of rules
-	Each rule should contain:
-- Rule data structure:
-	- id (unique within the Flow, obligatory)
-	- title
-	- rule that will be run against some incoming json data. This is basically a function that takes a parameter (json data) and returns a boolean result.
-- next id of the rule to execute if the function returns true
-- next id of the rule to execute if the function returns false
-	if “true_id” or “false_id” is null it means the end of the flow execution, a terminal.
+A flow engine is an application that creates a flow consisting of several rules, executing the flow against some incoming data (a JSON string that can be parsed to a JavaScript object literal). 
 
-- Pass an object to the created flow and it will be processed. 
-- As a result show the chain of executed rules (their title incl. colours like green for passed rule and red for failed).
+Create a new flow. The flow is a list of linked rules.
 
-##Rules:
-- You can not specify the same rule id in 'true_id' or 'false_id' more than once within the same flow
--  the very first rule’s id can not be specified in 'If rule passed' or 'If rule failed'
-Those 2 rules are to make the execution graph acyclic.
-- If next id is empty ('If rule passed'/'If rule failed') then stop execution and display the list of executed tasks including status(passed/failed)
+Each rule should contain (at least) (rule data structure):
+	- ID (unique within the flow, required)
+	- Rule that will be run against the incoming json data. This is a function that takes a parameter and returns a boolean result. Each function should be called with the same incoming data (the JS object literal)
+	- ID of the rule to execute if the function returns true (`true_id`)
+	- ID of the rule to execute if the function returns false (`false_id`)
+	 
+- Pass an object (an example of an object, and a rule is given below) to the created flow. 
 
+The execution will end when a `null` is provided for the `true_id` (and the function returns `true`) or when `null` is provided for the `false_id` (and the function returns `false`).
+
+
+##Constraints:
+-  The flow engine should not be circular
+
+#Information
 Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea the flow
 ![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
 
+| Example Object |
+------------------
+```javascript
+
+{
+	furry: true,
+	noise: "miaow",
+	lives: 9
+}
+
+```
+| Example Rule |
+------------------
+```javascript
+	var rule = {
+	body: function(data){
+		if (data.furry && lives === 9) {
+			// probably a cat
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
+	true_id: 3,
+	false_id: 6,
+	name: 'is a cat rule'
+	}
+
+```
+
+
 #Instructions
-- Please don't spend more than 3 hours. We don't expect ready to production solution.
-- Just use pure Javascript for the Flow logic implementation (no underscore and other libraries)
-- No UI is required. We recommend to create a json file with the list of rules and object you pass to the flow. Results can be outputed with console.log.
+- Please don't spend more than 3 hours. We don't expect a production-ready solution.
+- Just use pure JavaScript for the flow logic implementation (no underscore and other libraries)
+- No UI is required. We recommend to create a JSON file with the list of rules, and an object you will pass to the flow. Results can be out with console.log, bonus points for a colorful console.log for passing, or failing rules!.
 
 #What we're looking for:
 - Code quality
@@ -42,5 +72,4 @@ Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-
 - Technical choices
 
 #Submission
-Please push your code to a GitHub repository(or similar) and let us know when it's ready to for review. We appreciate your time and energy completing the coding exercise and will review your solution as quickly as possible.
-
+Please push your code to a GitHub repository (or similar) and let us know when it's ready to for review. We appreciate your time and energy completing the coding exercise and will review your solution as quickly as possible.
