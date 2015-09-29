@@ -24,7 +24,7 @@ The execution will end when a `null` is provided for the `true_id` (and the func
 -  The flow engine should not be circular
 
 #Information
-Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea the flow
+Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png) below to get a better idea of the flow
 ![](https://raw.githubusercontent.com/hubrick/frontend-code-challenge/master/frontend-challenge-flow-mockup.png)
 
 | Example Object |
