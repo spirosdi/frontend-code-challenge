@@ -5,11 +5,9 @@ We're excited that you're interested in joining the [Hubrick](https://hubrick.co
 The purpose of this test is to see how you approach problems as well as to evaluate the quality of your code.
 
 #Challenge description
-Create a simple flow engine.
+The challenge is to create a simple flow engine.
 
-A flow engine is an application that creates a flow consisting of several rules, executing the flow against some incoming data (a JSON string that can be parsed to a JavaScript object literal). 
-
-Create a new flow. The flow is a list of linked rules.
+A flow engine is an application that executes a flow consisting of several linked rules, in this case against some incoming data (a JSON string that can be parsed to a JavaScript object literal). 
 
 Each rule should contain (at least) (rule data structure):
 	- ID (unique within the flow, required)
@@ -17,10 +15,9 @@ Each rule should contain (at least) (rule data structure):
 	- ID of the rule to execute if the function returns true (`true_id`)
 	- ID of the rule to execute if the function returns false (`false_id`)
 	 
-- Pass an object (an example of an object, and a rule is given below) to the created flow. 
+- Pass an object (an example of an object and a rule is given below) to the created flow. 
 
 The execution will end when a `null` is provided for the `true_id` (and the function returns `true`) or when `null` is provided for the `false_id` (and the function returns `false`).
-
 
 ##Constraints:
 -  The flow engine should not be circular
