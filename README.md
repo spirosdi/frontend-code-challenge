@@ -9,12 +9,12 @@ The challenge is to create a simple flow engine.
 
 A flow engine is an application that executes a flow consisting of several linked rules, in this case against some incoming data (a JSON string that can be parsed to a JavaScript object literal). 
 
-Each rule should contain (at least) (rule data structure):
+Each rule should contain (at least)
 	
-- ID (unique within the flow, required)
-- Rule that will be run against the incoming json data. This is a function that takes a parameter and returns a boolean result. Each function should be called with the same incoming data (the JS object literal)
-- ID of the rule to execute if the function returns true (`true_id`)
-- ID of the rule to execute if the function returns false (`false_id`)
+- An ID (unique within the flow, required)
+- A rule that will be run against the incoming json data. This is a function that takes a parameter and returns a boolean result. Each function should be called with the same incoming data (the JS object literal)
+- An ID of the rule to execute if the function returns true (`true_id`)
+- An ID of the rule to execute if the function returns false (`false_id`)
 	 
 Pass an object (an example of an object and a rule is given below) to the created flow. 
 
