@@ -30,7 +30,8 @@ Please see the [mockup](https://raw.githubusercontent.com/hubrick/frontend-code-
 #Instructions
 - Please don't spend more than 3 hours. We don't expect a production-ready solution.
 - Just use pure JavaScript for the flow logic implementation (no underscore and other libraries)
-- No UI is required. We recommend to create a JSON file with the list of rules, and an object you will pass to the flow. Results can be out with console.log, bonus points for a colorful console.log for passing, or failing rules!.
+- No UI is required. We recommend to create a JSON file with the list of rules, and an object you will pass to the flow. Results can be out with console.log, bonus points for a colorful console.log for passing, or failing rules!
+- Unit tests and bundler/task runner are a plus.
 
 #What we're looking for:
 - Code quality
