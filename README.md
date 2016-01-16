@@ -1,6 +1,27 @@
 Hubrick Frontend Challenge
 ========================
 
+#Structure of code
+The app/js/app.js contains the Flow Module.
+The app/js/rules.js contains the set of rules.
+The build/frontend-code-challenge-min.js is the bundled code automatically created by the grunt uglify task
+The spec/flowSpec.js contains unit tests
+The Gruntfile.js contains the grunt configuration
+The package.json contains the node packages configuration
+
+#Instructions to run the code
+- Run npm install to install node packages
+- Run the grunt default task. Open a console and from the root folder of the project call: grunt. The task runs the uglify task to bundle and uglify the src code. Also the jasmine task for unit testing
+- Open index.html in a browser
+- Open a JS console and call the public init method of the Flow module with the incoming JSON data passed as a string. For example: Flow.init('{"value": 9}');
+
+#The Grunt task runner
+The Grunt task runner is used. The tasks are:
+- uglify : for uglifying and bundling the src files
+- watch : watcher of src files that runs the uglify task
+- jasmine : js unit testing
+- default : executes the uglify and default tasks
+
 We're excited that you're interested in joining the [Hubrick](https://hubrick.com/) team. 
 The purpose of this test is to see how you approach problems as well as to evaluate the quality of your code.
 
